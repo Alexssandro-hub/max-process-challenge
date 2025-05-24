@@ -1,0 +1,63 @@
+## Compilação ##
+bin/
+obj/
+[Bb]uild/
+[Ll]ogs/
+*.log
+
+## Diretórios do Visual Studio ##
+.vscode/
+.vs/
+.idea/
+
+## Arquivos de configuração do usuário ##
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Arquivos de pacotes NuGet ##
+*.nupkg
+*.snupkg
+*.nuspec
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Configurações e senhas locais ##
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+## Testes ##
+TestResults/
+*.coverage
+*.coveragexml
+*.trx
+
+## Diretórios do sistema ##
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+*.swp
+
+## Arquivos do Rider ##
+.idea/
+*.sln.iml
+
+## Arquivos do Resharper ##
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+## Arquivos do Docker ##
+**/docker-compose.override.yml
+
+## Outros ##
+.env
+node_modules/
+*.db
+*.sqlite
+*.sqlite3
