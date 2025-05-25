@@ -10,12 +10,14 @@ namespace JwsAuthApi.Controllers
     public class AuthController : ControllerBase
     {
         private readonly JwtService _jwtService;
+        private readonly EncryptPassService _encryptPassService;
         private readonly IUsuarioService _usuarioService;
 
-        public AuthController(JwtService jwtService, IUsuarioService usuarioService)
+        public AuthController(JwtService jwtService, IUsuarioService usuarioService, EncryptPassService encryptPassService)
         {
             _jwtService = jwtService;
             _usuarioService = usuarioService;
+            _encryptPassService = encryptPassService;
         }
 
         [HttpPost("signin")]
@@ -23,7 +25,7 @@ namespace JwsAuthApi.Controllers
         {
             var user = _usuarioService.GetByLogin(request.Username);
 
-            if (user == null || user.Senha != request.Password)
+            if (user == null || user.Senha != _encryptPassService.Encrypt(request.Password))
                 return Unauthorized("Usuário ou senha inválidos");
 
             var token = _jwtService.GenerateToken(user.Login);

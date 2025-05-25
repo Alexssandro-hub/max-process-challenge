@@ -1,6 +1,7 @@
 ﻿using JwtAuthApi.Infrastructure.Contexts;
 using JwtAuthApi.Infrastructure.Domain;
 using JwtAuthApi.Infrastructure.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace JwtAuthApi.Infrastructure.Repos
 {
@@ -24,7 +25,16 @@ namespace JwtAuthApi.Infrastructure.Repos
 
         public void Update(Usuario usuario)
         {
-            _context.Usuarios.Update(usuario);
+            var local = _context.Set<Usuario>()
+                        .Local
+                        .FirstOrDefault(entry => entry.Id == usuario.Id);
+
+            if (local != null)
+            {
+                _context.Entry(local).State = EntityState.Detached;
+            }
+
+            _context.Entry(usuario).State = EntityState.Modified;
             _context.SaveChanges();
         }
 

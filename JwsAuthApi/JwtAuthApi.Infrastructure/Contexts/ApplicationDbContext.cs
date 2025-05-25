@@ -7,6 +7,6 @@ namespace JwtAuthApi.Infrastructure.Contexts
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
-        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; } 
     }
 }

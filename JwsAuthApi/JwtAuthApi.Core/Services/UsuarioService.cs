@@ -26,6 +26,10 @@ namespace JwtAuthApi.Core.Services
         public IEnumerable<Usuario> GetAll() => _repository.GetAll(); 
         public Usuario GetById(Guid id) => _repository.GetById(id); 
         public Usuario GetByLogin(string login) => _repository.GetByLogin(login); 
-        public void Update(Usuario entity) => _repository.Update(entity);
+        public void Update(Usuario entity)
+        {
+            entity.Senha = _encryptPassService.Encrypt(entity.Senha);
+            _repository.Update(entity); 
+        }
     }
 }
