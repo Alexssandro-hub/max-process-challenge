@@ -56,56 +56,59 @@ Este desafio não é sobre apenas escrever código, mas sobre avaliar o que já 
 
   3.2) Para cada melhoria aplicada, escreva uma explicação sobre o que foi feito, por que foi feito e quais os benefícios esperados
     - Segregação de interfaces:
-        O que foi feito:  Interfaces foram divididas por responsabilidade.
-        Por que foi feito: Evitar implementação desnecessária com o ganho da abstração
-        Benefícios: Código mais limpo e fácil de manter.
+        O que foi feito:  
+          * Interfaces foram divididas por responsabilidade.
+        Por que foi feito: 
+          * Evitar implementação desnecessária com o ganho da abstração
+        Benefícios: 
+          * Código mais limpo e fácil de manter.
     - Segregação de Camadas:
         O que foi feito: 
-          - Projeto separado em camadas (Core, Api, Infra, etc).
+          * Projeto separado em camadas (Core, Api, Infra, etc).
         Por que foi feito: 
-          - Organizar responsabilidades.
+          * Organizar responsabilidades.
         Benefícios: 
-          - Melhor manutenção e escalabilidade.
+          * Melhor manutenção e escalabilidade.
     - Algoritmo de Encrypt para senhas:
         O que foi feito: 
-          - Implementado hash seguro
+          * Implementado hash seguro
         Por que foi feito: 
-          - Proteger senhas no banco
+          * Proteger senhas no banco
         Benefícios: 
-          - Mais segurança e conformidade com boas práticas        
+          * Mais segurança e conformidade com boas práticas        
     - Melhorar usualmente o Swagger para ser possível aceitar o token JWT e assim as rotas tornarem acessíveis:
         O que foi feito:  
-          - Swagger configurado para aceitar token JWT.
+          * Swagger configurado para aceitar token JWT.
         Por que foi feito: 
-          - Permitir testar rotas protegidas.
+          * Permitir testar rotas protegidas.
         Benefícios: 
-          - Facilidade nos testes e validações.        
+          * Facilidade nos testes e validações.        
     - Implementar migrations no projeto/camada de Infrastructure:
         O que foi feito: 
-          - Adicionadas migrations para controle do banco.
+          * Adicionadas migrations para controle do banco.
         Por que foi feito:  
-          - Padronizar e versionar alterações.
+          * Padronizar e versionar alterações.
         Benefícios: 
-          - Menos erros e mais controle nas mudanças.        
+          * Menos erros e mais controle nas mudanças.        
     - Aplicar Conceitos do SOLID:
         O que foi feito:  
-          - Refatoração seguindo os princípios SOLID.
+          * Refatoração seguindo os princípios SOLID.
         Por que foi feito: 
-          - Melhorar estrutura e manutenibilidade.
+          * Melhorar estrutura e manutenibilidade.
         Benefícios: 
-          - Código mais flexível e testável. 
+          * Código mais flexível e testável. 
     - Aplicar Conceitos para evitar Code Smell:
         O que foi feito: 
-          - Remoção de duplicações, métodos grandes, etc.
+          * Remoção de duplicações, métodos grandes, etc.
         Por que foi feito: 
-          - Melhorar qualidade do código.
+          * Melhorar qualidade do código.
         Benefícios: 
-          - Menos bugs e manutenção mais fácil.
+          * Menos bugs e manutenção mais fácil.
     - Aplicar Clean Arquitecture para tornar o MVP escalável:
         O que foi feito: 
-          - Estrutura reorganizada com base na Clean Architecture.
+          * Estrutura reorganizada com base na Clean Architecture.
         Por que foi feito: 
-          - Separar responsabilidades e isolar regras de negócio.
+          * Separar responsabilidades e isolar regras de negócio.
         Benefícios:  
-          - Projeto mais escalável e de fácil evolução.
+          * Projeto mais escalável e de fácil evolução.
         
