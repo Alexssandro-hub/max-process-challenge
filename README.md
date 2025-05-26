@@ -54,7 +54,7 @@ Este desafio não é sobre apenas escrever código, mas sobre avaliar o que já 
     - Aplicar Conceitos para evitar Code Smell
     - Aplicar Clean Arquitecture para tornar o MVP escalável
 
-  3.2) Para cada melhoria aplicada, escreva uma explicação sobre o que foi feito, por que foi feito e quais os benefícios esperados.
+  3.2) Para cada melhoria aplicada, escreva uma explicação sobre o que foi feito, por que foi feito e quais os benefícios esperados
     - Segregação de interfaces:
         O que foi feito:  Interfaces foram divididas por responsabilidade.
         Por que foi feito: Evitar implementação desnecessária com o ganho da abstração
@@ -100,7 +100,7 @@ Este desafio não é sobre apenas escrever código, mas sobre avaliar o que já 
         Por que foi feito: 
           - Melhorar qualidade do código.
         Benefícios: 
-          - Menos bugs e manutenção mais fácil.        
+          - Menos bugs e manutenção mais fácil.
     - Aplicar Clean Arquitecture para tornar o MVP escalável:
         O que foi feito: 
           - Estrutura reorganizada com base na Clean Architecture.
